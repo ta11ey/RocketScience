@@ -564,7 +564,7 @@ module.exports = function (webpackEnv) {
           {
             inject: true,
             template: paths.appHtml,
-            filename: "../templates/index.html",
+            filename: isEnvDevelopment ? "index.html" : "../templates/index.html",
           },
           isEnvProduction
             ? {
