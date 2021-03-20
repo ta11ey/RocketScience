@@ -98,7 +98,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "../flask-server/static/react",
+  "homepage": "../static",
   "jest": {
     "roots": [
       "<rootDir>/src"
