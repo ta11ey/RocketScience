@@ -2,7 +2,7 @@ from flask import Flask, render_template, Blueprint, abort
 from jinja2 import TemplateNotFound
 from datetime import datetime
 
-home_page = Blueprint('home_page', __name__, template_folder='src/templates', static_folder='src/static')
+home_page = Blueprint('home_page', __name__, template_folder='templates', static_folder='static')
 
 @home_page.route('/', defaults = {'page': 'index'})
 @home_page.route('/<page>')
