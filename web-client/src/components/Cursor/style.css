@@ -1,0 +1,14 @@
+
+
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.cursor {
+    font-family: monospace;
+    margin-left: 0.5em;
+    animation: blink 1s infinite;
+};
