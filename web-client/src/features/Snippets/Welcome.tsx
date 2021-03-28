@@ -14,7 +14,12 @@ const Welcome = () => {
       </Line>)
     }
     { order(2) && (
-        <Prompt outcomes={[]} />
+      <Prompt outcomes={[
+          {
+            match: 'y',
+            render: "You did it!"
+          }
+        ]} />
       )
     }
   </>)

@@ -17,9 +17,11 @@ const TerminalJSX: FC = ({ children }) => {
     body: children
   }
 
-  return <TerminalContext.Provider value={initialState}>
+  return (
+    <TerminalContext.Provider value={initialState}>
     {body}
-  </TerminalContext.Provider>;
+    </TerminalContext.Provider>
+  );
 }
 
 export { TerminalContext };
